@@ -18,7 +18,9 @@ public class CompleteRegistrationActivity extends AppCompatActivity {
 
     private EditText countryEditText;
     private EditText ageEditText;
-    View.OnClickListener doneButtonOnClickListener = new View.OnClickListener() {
+    private Button doneButton;
+
+    private View.OnClickListener doneButtonOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             String country = countryEditText.getText().toString().trim();
@@ -41,7 +43,6 @@ public class CompleteRegistrationActivity extends AppCompatActivity {
             }
         }
     };
-    private Button doneButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,9 @@ public class CompleteRegistrationActivity extends AppCompatActivity {
         countryEditText = findViewById(R.id.editTextCountry);
         ageEditText = findViewById(R.id.editTextAge);
         doneButton = findViewById(R.id.buttonCompleteRegistrationDone);
+
+        countryEditText.setText("demo-country");
+        ageEditText.setText("24");
 
         doneButton.setOnClickListener(doneButtonOnClickListener);
     }

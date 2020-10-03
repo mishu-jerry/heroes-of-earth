@@ -73,6 +73,11 @@ public class SignUpActivity extends AppCompatActivity {
         confirmPasswordEditText = findViewById(R.id.editTextConfirmPassword);
         registerButton = findViewById(R.id.buttonRegister);
 
+        nameEditText.setText("Demo User 2");
+        emailEditText.setText("demo-email-2@domain");
+        passwordEditText.setText("demo-pass");
+        confirmPasswordEditText.setText("demo-pass");
+
         registerButton.setOnClickListener(registerButtonOnClickListener);
     }
 }

@@ -39,7 +39,7 @@
                     android:padding="8dp"
                     android:text="Profile Name"
                     android:textColor="@android:color/white"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -75,7 +75,7 @@
             android:paddingRight="16dp"
             android:text="Experience Level: "
             android:textColor="@android:color/white"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -87,7 +87,7 @@
             android:paddingRight="16dp"
             android:text="Completion Rate: "
             android:textColor="@android:color/white"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
     </LinearLayout>

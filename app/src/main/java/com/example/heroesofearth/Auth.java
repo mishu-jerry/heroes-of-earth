@@ -13,8 +13,8 @@ import java.util.ArrayList;
 
 public class Auth {
 
-    public static final String DEMO_EMAIL = "demo_email";
-    public static final String DEMO_PASS = "demo_password";
+    public static final String DEMO_EMAIL = "demo-email@domain";
+    public static final String DEMO_PASS = "demo-pass";
 
     private static User currentUser;
 
