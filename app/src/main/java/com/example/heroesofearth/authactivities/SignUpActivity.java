@@ -22,7 +22,9 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText emailEditText;
     private EditText passwordEditText;
     private EditText confirmPasswordEditText;
-    View.OnClickListener registerButtonOnClickListener = new View.OnClickListener() {
+    private Button registerButton;
+
+    private View.OnClickListener registerButtonOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             String name = nameEditText.getText().toString().trim();
@@ -30,29 +32,35 @@ public class SignUpActivity extends AppCompatActivity {
             String password = passwordEditText.getText().toString().trim();
             String confirmPassword = confirmPasswordEditText.getText().toString().trim();
 
-            if (password.equals(confirmPassword)) {
-                User user = new User(email, password, name);
+            if (name.length() > 0 || email.length() > 0 || password.length() > 0) {
 
-                boolean isSuccessful = Auth.signUp(user);
+                if (password.equals(confirmPassword)) {
+                    User user = new User(email, password, name);
 
-                if (isSuccessful) {
-                    Auth.login(email, password);
-                    Score.resetChallengeCompletions(Repo.dailyChallengesList);
+                    boolean isSuccessful = Auth.signUp(user);
 
-                    startActivity(new Intent(SignUpActivity.this,
-                            CompleteRegistrationActivity.class));
-                    finish();
+                    if (isSuccessful) {
+                        Auth.login(email, password);
+                        Score.resetChallengeCompletions(Repo.dailyChallengesList);
+
+                        startActivity(new Intent(SignUpActivity.this,
+                                CompleteRegistrationActivity.class));
+
+                        finish();
+                    } else {
+                        Toast.makeText(SignUpActivity.this,
+                                "Sign Up failed. The user already exists!", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
                     Toast.makeText(SignUpActivity.this,
-                            "Sign Up failed. The user already exists!", Toast.LENGTH_SHORT).show();
+                            "Passwords didn't matched!", Toast.LENGTH_SHORT).show();
                 }
             } else {
                 Toast.makeText(SignUpActivity.this,
-                        "Passwords didn't matched!", Toast.LENGTH_SHORT).show();
+                        "Please enter the required information!", Toast.LENGTH_SHORT).show();
             }
         }
     };
-    private Button registerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
