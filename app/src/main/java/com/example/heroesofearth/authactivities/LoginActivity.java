@@ -24,8 +24,10 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         }
     };
+
     private EditText emailEditText;
     private EditText passwordEditText;
+
     View.OnClickListener loginButtonOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -50,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
     };
+
     private Button loginButton;
     private TextView registerButtonTextView;
 

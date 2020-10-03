@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.heroesofearth.Auth;
 import com.example.heroesofearth.R;
-import com.example.heroesofearth.authactivities.LoginActivity;
+import com.example.heroesofearth.authactivities.SignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (Auth.getCurrentUser() == null) {
-            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            startActivity(new Intent(MainActivity.this, SignUpActivity.class));
             finish();
         } else {
             startActivity(new Intent(MainActivity.this, DashboardActivity.class));

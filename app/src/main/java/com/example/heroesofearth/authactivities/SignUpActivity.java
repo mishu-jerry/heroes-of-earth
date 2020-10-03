@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private EditText confirmPasswordEditText;
     private Button registerButton;
+    private TextView textViewLoginButton;
 
     private View.OnClickListener registerButtonOnClickListener = new View.OnClickListener() {
         @Override
@@ -62,6 +64,14 @@ public class SignUpActivity extends AppCompatActivity {
         }
     };
 
+    private View.OnClickListener loginButtonOnClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
+            finish();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +82,7 @@ public class SignUpActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.editTextPassword);
         confirmPasswordEditText = findViewById(R.id.editTextConfirmPassword);
         registerButton = findViewById(R.id.buttonRegister);
+        textViewLoginButton = findViewById(R.id.textViewLoginButton);
 
         nameEditText.setText("Demo User 2");
         emailEditText.setText("demo-email-2@domain");
@@ -79,5 +90,6 @@ public class SignUpActivity extends AppCompatActivity {
         confirmPasswordEditText.setText("demo-pass");
 
         registerButton.setOnClickListener(registerButtonOnClickListener);
+        textViewLoginButton.setOnClickListener(loginButtonOnClickListener);
     }
 }
