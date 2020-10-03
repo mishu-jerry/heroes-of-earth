@@ -8,9 +8,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.heroesofearth.DashboardActivity;
 import com.example.heroesofearth.R;
 import com.example.heroesofearth.Score;
+import com.example.heroesofearth.activities.DashboardActivity;
 import com.example.heroesofearth.repository.Repo;
 
 public class NewUserShowCarbonFootprintActivity extends AppCompatActivity {

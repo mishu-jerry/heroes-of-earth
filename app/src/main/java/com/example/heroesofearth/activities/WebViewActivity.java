@@ -1,4 +1,4 @@
-package com.example.heroesofearth;
+package com.example.heroesofearth.activities;
 
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -7,6 +7,9 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.heroesofearth.MyWebViewClient;
+import com.example.heroesofearth.R;
 
 public class WebViewActivity extends AppCompatActivity {
 

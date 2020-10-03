@@ -11,8 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.heroesofearth.Auth;
-import com.example.heroesofearth.DashboardActivity;
 import com.example.heroesofearth.R;
+import com.example.heroesofearth.activities.DashboardActivity;
 import com.example.heroesofearth.repository.Repo;
 
 public class LoginActivity extends AppCompatActivity {

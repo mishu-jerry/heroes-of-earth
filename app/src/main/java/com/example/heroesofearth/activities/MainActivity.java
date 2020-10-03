@@ -1,10 +1,12 @@
-package com.example.heroesofearth;
+package com.example.heroesofearth.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.heroesofearth.Auth;
+import com.example.heroesofearth.R;
 import com.example.heroesofearth.authactivities.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {

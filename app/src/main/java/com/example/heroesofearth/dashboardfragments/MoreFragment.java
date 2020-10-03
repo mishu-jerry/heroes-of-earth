@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 import com.example.heroesofearth.R;
-import com.example.heroesofearth.WebViewActivity;
+import com.example.heroesofearth.activities.WebViewActivity;
 import com.squareup.picasso.Picasso;
 
 /**

@@ -13,14 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".activities.WebViewActivity"></activity>
         <activity android:name=".welcomeactivities.NewUserShowCarbonFootprintActivity" />
         <activity android:name=".welcomeactivities.NewUserCalculateCarbonFootprintActivity" />
         <activity android:name=".welcomeactivities.CompleteRegistrationActivity" />
         <activity android:name=".authactivities.SignUpActivity" />
         <activity android:name=".authactivities.LoginActivity" />
-        <activity android:name=".DashboardActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.DashboardActivity" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
