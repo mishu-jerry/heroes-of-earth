@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.heroesofearth.dashboardfragments.ChallengesFragment;
 import com.example.heroesofearth.dashboardfragments.FailedTasksFragment;
+import com.example.heroesofearth.dashboardfragments.MoreFragment;
 import com.example.heroesofearth.dashboardfragments.ProfileFragment;
 import com.example.heroesofearth.dashboardfragments.ProgressFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -39,6 +40,9 @@ public class DashboardActivity extends AppCompatActivity {
                     break;
                 case R.id.navigation_profile:
                     fragment = new ProfileFragment();
+                    break;
+                case R.id.navigation_more:
+                    fragment = new MoreFragment();
                     break;
                 default:
                     return false;

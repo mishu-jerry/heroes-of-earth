@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_all"
+    android:orientation="vertical"
+    tools:context=".dashboardfragments.MoreFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:text="More Information"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutButtonArticle"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewArticle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bg_progress_good" />
+
+        <TextView
+            android:id="@+id/textViewArticle"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkTransparent"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:text="Article Headline"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

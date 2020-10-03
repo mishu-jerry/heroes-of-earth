@@ -21,4 +21,9 @@
         android:icon="@drawable/ic_baseline_profile_24"
         android:title="Profile" />
 
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_baseline_more_24"
+        android:title="More" />
+
 </menu>
