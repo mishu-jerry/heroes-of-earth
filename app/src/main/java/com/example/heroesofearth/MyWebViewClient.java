@@ -52,7 +52,7 @@ public class MyWebViewClient extends WebViewClient {
     public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
         super.onReceivedError(view, request, error);
         if (!isErrorDisplayed) {
-            Toast.makeText(activity, error.getDescription().toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(activity, "Something went wrong! Please try again", Toast.LENGTH_LONG).show();
             isErrorDisplayed = true;
         }
     }
