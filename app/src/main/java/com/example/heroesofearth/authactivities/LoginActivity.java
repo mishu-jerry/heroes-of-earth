@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             String email = emailEditText.getText().toString().trim();
             String password = passwordEditText.getText().toString().trim();
 
-            if (email != null && password != null) {
+            if (email.length() > 0 && password.length() > 0) {
                 boolean isSuccessful = Auth.login(email, password);
 
                 if (isSuccessful) {
